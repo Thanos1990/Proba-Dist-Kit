@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+<html>
+   <body>
+      <form action = "https://proba-distr-than.herokuapp.com/lognormal_plot" method = "POST">
+         <p>Number of Simulations (Input a positive integer number) <input type = "int" name = "Number of Simulations" /></p>
+         <p>Median parameter - area which is more likely to export a value <input type = "float" name = "Median" /></p>
+         <p>Volatility parameter - dictates the distance of instances from the median <input type = "float" name = "Volatility" /></p>
+         <p><input type = "submit" value = "submit" /></p>
+      </form>
+   </body>
+</html>
+{% endblock %}
